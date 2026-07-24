@@ -20,8 +20,7 @@ The app uses a simple Retrieval-Augmented Generation (RAG) pipeline:
 - Multi-document support
 - Follow-up question handling
 - Conversation history
-## Limitations
-Retrieval uses **TF-IDF** (keyword / term-frequency matching), not semantic embeddings. Questions that paraphrase the document without sharing vocabulary may score poorly or be marked out of scope, even when a human would see them as related. This is an intentional tradeoff: the app stays fast, dependency-light, and fully client-side for indexing—no vector database or embedding API required. For production-grade semantic recall, dense embeddings (e.g. sentence transformers) would be the natural next step.
+
 ## Tech stack
 | Layer | Technology |
 | --- | --- |
